@@ -1,3 +1,4 @@
-git add requirements.txt
-git commit -m "Add requirements.txt file"
-git push
+openai==1.59.0
+python-dotenv==1.0.0
+flask==2.3.3
+gunicorn==21.2.0
