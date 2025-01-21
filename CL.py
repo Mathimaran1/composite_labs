@@ -12,6 +12,10 @@ conversation_history = [
 
 app = Flask(__name__)
 
+@app.route("/", methods=["GET"])
+def home():
+    return "Welcome to the Composite Labs and Monad chatbot API. Use the /chat endpoint to interact with the bot."
+
 @app.route("/chat", methods=["POST"])
 def chatbot():
     user_input = request.json.get("message")
